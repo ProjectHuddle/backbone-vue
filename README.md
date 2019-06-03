@@ -8,6 +8,22 @@ A lightweight Vue.js Plugin to facilitate gradual migration from Backbone.
 - 2-way binding of events.
 - Extremely light - whitelist only attributes you want synced.
 
+## Installation
+
+1. Install via npm or yarn.
+
+```
+npm install vue-backbone
+```
+
+2. Import and use the plugin on your Vue instance:
+
+```
+import Vue from "vue";
+import BackboneVue from "backbone-vue";
+Vue.use(BackboneVue);
+```
+
 ## Usage
 
 ```js
