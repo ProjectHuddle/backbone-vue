@@ -12,13 +12,13 @@ A lightweight Vue.js Plugin to facilitate gradual migration from Backbone.
 
 1. Install via npm or yarn.
 
-```
+```bash
 npm install vue-backbone
 ```
 
 2. Import and use the plugin on your Vue instance:
 
-```
+```bash
 import Vue from "vue";
 import BackboneVue from "backbone-vue";
 Vue.use(BackboneVue);
