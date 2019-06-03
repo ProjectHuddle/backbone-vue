@@ -1,8 +1,11 @@
+import pick from "lodash/pick";
+
 let backboneMixin = {
   created() {
     var backbone = this.$options.backbone,
       data = {};
 
+    // need backbone options
     if (!backbone) {
       return;
     }
@@ -39,12 +42,12 @@ let backboneMixin = {
     if (this._backbone.data) {
       // get data and values
       if (this._backbone.model) {
-        data = _.pick(
+        data = pick(
           this._backbone.model.toJSON(),
           Object.keys(this._backbone.data)
         );
       } else {
-        data = _.pick(
+        data = pick(
           this._backbone.collection.toJSON(),
           Object.keys(this._backbone.data)
         );
