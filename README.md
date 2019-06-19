@@ -1,6 +1,6 @@
 # backbone-vue
 
-A lightweight Vue.js Plugin to facilitate gradual migration from Backbone.
+A lightweight Vue.js Plugin to facilitate gradual migration from Backbone. This plugin takes a top-down approach to the transition to Vue from Backbone which allows for incremental migration away from backbone. The benefit to this approach is you do not need to have any backbone code inside your vue instances and components.
 
 ## Features
 
@@ -35,6 +35,9 @@ var vm = new Vue({
     return {
       // pass a reference to a view's model
       model: this.model,
+      
+      // or pass a reference to a collection
+      collection: this.collection,
 
       // whitelist model attributes you want for 2-way binding
       // bind backbone attributes to vue data
