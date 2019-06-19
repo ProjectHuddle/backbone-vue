@@ -61,7 +61,9 @@ let backboneMixin = {
 
         // watch for vm changes and update model
         this.$watch(vmKey, val => {
-          this._backbone.model.set(key, val);
+          // vue turns arrays into objects, so we need to turn them back!
+          let parsedVal = JSON.parse(JSON.stringify(val));
+          this._backbone.model.set(key, parsedVal);
         });
 
         // watch for model changes and update vm
