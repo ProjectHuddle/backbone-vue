@@ -1,6 +1,6 @@
 {
   "name": "backbone-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A lightweight Vue.js Plugin to facilitate gradual migration from Backbone.",
   "main": "src/main.js",
   "scripts": {
